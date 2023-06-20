@@ -32,13 +32,6 @@ migrate_working_dir/
 .pub/
 /build/
 
-# env
-.env
-*.env
-**/assets/config
-./assets/config/.env
-assets/config/.env
-
 # Symbolication related
 app.*.symbols
 

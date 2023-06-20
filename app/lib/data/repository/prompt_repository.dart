@@ -15,7 +15,7 @@ class PromptRepository {
       "page": page,
       "size": size,
     };
-    Response response = await _dioService.get("/search/prompts", params);
+    Response response = await _dioService.get("/prompts", params);
     final promptsData = response.data["searchPromptList"] as List;
     List<PromptModel> promptList =
         promptsData.map((json) => PromptModel.fromJson(json)).toList();
